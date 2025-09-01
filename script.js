@@ -1,0 +1,344 @@
+document.getElementById("estudiantes").addEventListener("click", mostrarEstudiantes);
+document.getElementById("introduccion").addEventListener("click", mostrarIntroduccion);
+document.getElementById("alejandro").addEventListener("click", mostrarInfoAlejandro);
+
+function mostrarEstudiantes() {
+  document.getElementById("botoneraArticulos").innerHTML = ""; // limpiar botones
+  const mensaje = document.getElementById("mensaje");
+
+  mensaje.className = "alert alert-primary mt-4";
+  mensaje.innerHTML = `
+        <h3>Estudiantes:</h3> 
+        <ul>
+            <li>Yefry Esteban Ávila Zuluaga</li>
+            <li>Daniel Felipe Chávez González</li>
+            <li>Alejandro Parada Estupiñán</li>
+        </ul>
+        <h4>Aportes realizados al trabajo:</h4>
+        <ul>
+            <li>Alejandro Parada Estupiñán:</li>
+            <ul>
+                <li>Funciones JavaScript:</li>
+                <ul>
+                    <li>mostrarEstudiantes</li>
+                    <li>mostrarIntroduccion</li>
+                    <li>art1Alejandro</li>
+                    <li>art2Alejandro</li>
+                    <li>art3Alejandro</li>
+                </ul>
+                <li>Etiquetas HTML</li>
+                <ul>
+                    <li>p para parrafos (se puede evidenciar en cada función realizada)</li>
+                    <li>table para mostrar información de artículos</li>
+                    <li>h2, h3 y h4 para títulos y subtítulos</li>
+                    <li>img para mostrar imágenes relacionadas con los pasos de búsqueda y selección de artículos</li>
+                    <li>button para la implementación de botones en los nombres de los estudiantes, introducción y selección de artículos</li>
+                </ul>
+                <li>Reglas de estilo</li>
+                <ul>
+                    <li>h2, h3 y h4</li>
+                    <li>.tabla_articulo1_alejandro, .tabla_articulo2_alejandro y .tabla_articulo3_alejandro</li>
+                    <li>.tabla_articulo1_alejandro th, .tabla_articulo1_alejandro td, .tabla_articulo2_alejandro th, .tabla_articulo2_alejandro td, .tabla_articulo3_alejandro th y .tabla_articulo3_alejandro td</li>
+                    <li>#articulo1_alejandro, #articulo2_alejandro y #articulo1_alejandro</li>
+                </ul>
+            </ul>
+        </ul>
+      `;
+}
+
+function mostrarIntroduccion() {
+  document.getElementById("botoneraArticulos").innerHTML = ""; // limpiar botones
+  const mensaje = document.getElementById("mensaje");
+
+  mensaje.className = "alert alert-primary mt-4";
+  mensaje.innerHTML = `
+        <h3>Introducción</h3>
+        <p>
+          La Inteligencia Artificial (IA), entendida como la disciplina de la informática que busca desarrollar sistemas capaces de simular procesos de la inteligencia humana —como el razonamiento, el aprendizaje, la percepción y la toma de decisiones—, se ha consolidado en las últimas décadas como una de las áreas de mayor impacto en el desarrollo tecnológico a nivel mundial. Su capacidad para procesar grandes volúmenes de información y tomar decisiones de manera autónoma la ha convertido en una herramienta de apoyo esencial en diversos ámbitos. Actualmente, la IA se encuentra presente en sectores empresariales, donde optimiza procesos y estrategias; en el ámbito personal, mediante aplicaciones que facilitan la vida cotidiana; y en la educación, a través de sistemas que promueven experiencias de aprendizaje personalizadas y accesibles.
+        </p>
+        <p>
+          La elección de este tema responde al interés por comprender cómo la inteligencia artificial ha evolucionado y se ha integrado en la sociedad. Asimismo, resulta relevante analizar investigaciones recientes que evidencian su constante evolución, sus retos éticos y sus oportunidades de aplicación en distintas disciplinas. 
+        </p>
+      `;
+}
+
+function mostrarInfoAlejandro() {
+  const mensaje = document.getElementById("mensaje");
+  const botonera = document.getElementById("botoneraArticulos");
+  mensaje.className = "alert alert-primary mt-4";
+
+  mensaje.innerHTML = `
+    <h3>Pasos de búsqueda de artículos</h3>
+    <h4>Paso 1:</h4>
+    <p>Selección de base de datos: Scopus</p>
+    <img src="busqueda1.png" width="50%" alt="busqueda_base_datos_alejandro">
+    <h4>Paso 2:</h4>
+    <p>Cadena de búsqueda: artificial AND intelligence</p>
+    <img src="busqueda2.png" width="50%" alt="cadena_busqueda_alejandro">
+    <h4>Paso 3:</h4>
+    <p>Resultado de búsqueda: 733.133 artículos</p>
+    <img src="busqueda3.png" width="50%" alt="resultado_busqueda_alejandro">
+    <p>Ahora selecciona un artículo</p>
+    `;
+
+  botonera.innerHTML = `
+        <button class="btn btn-outline-primary m-1" onclick="art1Alejandro()">1</button>
+        <button class="btn btn-outline-primary m-1" onclick="art2Alejandro()">2</button>
+        <button class="btn btn-outline-primary m-1" onclick="art3Alejandro()">3</button>
+      `;
+}
+
+function art1Alejandro() {
+  const mensaje = document.getElementById("mensaje");
+  const botonera = document.getElementById("botoneraArticulos");
+
+  botonera.innerHTML = `
+        <button class="btn btn-outline-primary m-1" onclick="art1Alejandro()">1</button>
+        <button class="btn btn-outline-primary m-1" onclick="art2Alejandro()">2</button>
+        <button class="btn btn-outline-primary m-1" onclick="art3Alejandro()">3</button>
+    `;
+
+  mensaje.className = "alert alert-primary mt-4";
+  mensaje.innerHTML = `
+        <h3>Artículo 1</h3>
+        <table class="table tabla_articulo1_alejandro">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Item</th>
+      <th scope="col">Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Base de datos seleccionada</td>
+      <td>Scopus</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Cadena de búsqueda realizada</td>
+      <td>artificial AND intelligence</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Cantidad de documentos arrojada</td>
+      <td>733.133</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Referencia bibliográfica</td>
+      <td>Yang, Y., Wang, P., Yu, C., Zhu, J. & Sheng, J. (2025). 
+        Application of artificial intelligence medical imaging aided diagnosis system in the diagnosis of pulmonary nodules. <i>BMC Medical Informatics and Decision Making, 25</i>(185). https://doi.org/10.1186/s12911-025-03009-4</td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Título del artículo</td>
+      <td>Application of artificial intelligence medical imaging aided diagnosis system in the diagnosis of pulmonary nodules</td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>Autores</td>
+      <td>Ya Yang, Pan Wang, Chengzhou Yu, Jing Zhu y Jinping Sheng</td>
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td>Año de publicación</td>
+      <td>2025</td>
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>Revista de publicación</td>
+      <td>BMC Medical Informatics and Decision Making</td>
+    </tr>
+    <tr>
+      <th scope="row">9</th>
+      <td>Resumen</td>
+      <td>La aplicación de la tecnología de inteligencia artificial (IA) ha permitido la transformación de la producción y el estilo de vida de las personas, además de promover el rápido desarrollo del campo médico. En la actualidad, la aplicación de la inteligencia en el ámbito médico está en aumento. Utilizando métodos y tecnologías avanzadas de IA, este artículo busca lograr la integración de los sistemas de diagnóstico asistido por imágenes médicas con la IA, lo cual resulta útil para analizar y resolver las deficiencias y errores del diagnóstico tradicional en la detección de nódulos pulmonares. Basándose en los principios y reglas de los métodos de segmentación de imágenes, se lleva a cabo la construcción y optimización de un sistema de diagnóstico médico asistido por imágenes, con el fin de alcanzar mayor precisión en el diagnóstico de nódulos pulmonares.
+En la comparación entre diagnósticos de nódulos pulmonares realizados por sistemas tradicionales y por sistemas de diagnóstico asistido por imágenes médicas con IA, se evaluaron 231 nódulos con patología o sin cambios tras un seguimiento mayor a dos años, dentro de 200 casos. Los resultados mostraron que el software de IA detectó un total de 881 nódulos verdaderos con una sensibilidad del 99,10% (881/889). Por su parte, los radiólogos detectaron 385 nódulos verdaderos con una sensibilidad del 43,31% (385/889). La sensibilidad del software de IA para detectar nódulos no calcificados fue significativamente mayor que la de los radiólogos (99,01% vs 43,30%, P < 0,001), y la diferencia fue estadísticamente significativa.
+</td>
+    </tr>
+    <tr>
+      <th scope="row">10</th>
+      <td>Palabras clave</td>
+      <td>Sistema de diagnóstico asistido por imágenes médicas, IA, Segmentación de imágenes, Diagnóstico de nódulos pulmonares</td>
+    </tr>
+    <tr>
+      <th scope="row">11</th>
+      <td>Imagen resultado de búsqueda</td>
+      <td><img src="articulo1_alejandro.png" alt="busqueda_articulo1_alejandro" id="articulo1_alejandro"></td>
+    </tr>
+  </tbody>
+       </table>
+        `;
+}
+
+function art2Alejandro() {
+  const mensaje = document.getElementById("mensaje");
+  const botonera = document.getElementById("botoneraArticulos");
+
+  botonera.innerHTML = `
+        <button class="btn btn-outline-primary m-1" onclick="art1Alejandro()">1</button>
+        <button class="btn btn-outline-primary m-1" onclick="art2Alejandro()">2</button>
+        <button class="btn btn-outline-primary m-1" onclick="art3Alejandro()">3</button>
+    `;
+
+  mensaje.className = "alert alert-primary mt-4";
+  mensaje.innerHTML = `
+        <h3>Artículo 2</h3>
+        <table class="table tabla_articulo2_alejandro">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Item</th>
+      <th scope="col">Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Base de datos seleccionada</td>
+      <td>Scopus</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Cadena de búsqueda realizada</td>
+      <td>artificial AND intelligence</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Cantidad de documentos arrojada</td>
+      <td>733.133</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Referencia bibliográfica</td>
+      <td>Wang, Y., Sun, Y., Lin, B., Zhang, H., Luo, X., Liu, Y., Jin, X. & Zhu, D. (2025). SEGT-GO: a graph transformer method based on PPI serialization and explanatory artificial intelligence for protein function prediction. <i>BMC Bioinformatics, 26</i>(46). https://doi.org/10.1186/s12859-025-06059-7</td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Título del artículo</td>
+      <td>SEGT-GO: a graph transformer method based on PPI serialization and explanatory artificial intelligence for protein function prediction</td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>Autores</td>
+      <td>Yansong Wang, Yundong Sun, Baohui Lin, Haotian Zhang, Xiaoling Luo, Yumeng Liu, Xiaopeng Jin y Dongjie Zhu.</td>
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td>Año de publicación</td>
+      <td>2025</td>
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>Revista de publicación</td>
+      <td>BMC Bioinformatics</td>
+    </tr>
+    <tr>
+      <th scope="row">9</th>
+      <td>Resumen</td>
+      <td>Antecedentes: Se ha obtenido una gran cantidad de secuencias de proteínas, pero sus funciones siguen siendo difíciles de identificar. En investigaciones recientes sobre la predicción de funciones de proteínas, las redes de interacción proteína-proteína (PPI, por sus siglas en inglés) han desempeñado un papel crucial. Descubrir posibles relaciones funcionales entre proteínas distantes dentro de las redes PPI es esencial para mejorar la precisión en la predicción de funciones proteicas. La mayoría de los estudios actuales intentan capturar estas relaciones distantes apilando capas de redes de grafos, pero las ganancias en rendimiento disminuyen a medida que aumenta el número de capas.
+Resultados: Para explorar más a fondo las posibles relaciones funcionales entre proteínas multi-hop en las redes PPI, este artículo propone SEGT-GO, un método de Graph Transformer basado en la serialización de vecindarios multi-hop en PPI y en inteligencia artificial explicable (XAI) para la predicción de funciones proteicas a gran escala y en múltiples especies. La serialización de vecindarios multi-hop mapea la información multi-hop en la red PPI hacia representaciones de características serializadas, lo que permite al Graph Transformer aprender características funcionales más profundas dentro de la red PPI. Basado en la teoría de juegos, el marco SHAP (Shapley Additive Explanations) de inteligencia artificial explicable optimiza la entrada del modelo y filtra el ruido de las características, mejorando así el rendimiento del modelo.
+Conclusiones: En comparación con el método avanzado DeepGraphGO, SEGT-GO logra resultados más competitivos en conjuntos de datos estándar a gran escala y resultados superiores en conjuntos pequeños, validando su capacidad para extraer información funcional de proteínas profundas. Además, SEGT-GO obtiene resultados superiores en el aprendizaje entre especies y en la predicción de las funciones de proteínas no vistas, lo que demuestra aún más la sólida capacidad de generalización del método.
+</td>
+    </tr>
+    <tr>
+      <th scope="row">10</th>
+      <td>Palabras clave</td>
+      <td>Predicción de funciones proteicas, Graph Transformer, Redes PPI, Serialización de vecindarios multi-hop, Inteligencia artificial explicable</td>
+    </tr>
+    <tr>
+      <th scope="row">11</th>
+      <td>Imagen resultado de búsqueda</td>
+      <td><img src="articulo2_alejandro.png" alt="busqueda_articulo2_alejandro" id="articulo2_alejandro"></td>
+    </tr>
+  </tbody>
+       </table>
+        `;
+}
+
+function art3Alejandro() {
+  const mensaje = document.getElementById("mensaje");
+  const botonera = document.getElementById("botoneraArticulos");
+
+  botonera.innerHTML = `
+        <button class="btn btn-outline-primary m-1" onclick="art1Alejandro()">1</button>
+        <button class="btn btn-outline-primary m-1" onclick="art2Alejandro()">2</button>
+        <button class="btn btn-outline-primary m-1" onclick="art3Alejandro()">3</button>
+    `;
+    
+  mensaje.className = "alert alert-primary mt-4";
+  mensaje.innerHTML = `
+        <h3>Artículo 3</h3>
+        <table class="table tabla_articulo3_alejandro">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Item</th>
+      <th scope="col">Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Base de datos seleccionada</td>
+      <td>Scopus</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Cadena de búsqueda realizada</td>
+      <td>artificial AND intelligence</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Cantidad de documentos arrojada</td>
+      <td>733.133</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Referencia bibliográfica</td>
+      <td>Mascarenhas, M., Mendes, F., Mota, J., Ribeiro, T., Cardoso, P., Martins, M., Almeida, M., Cordeiro, J., Ferreira, J., Macedo, G. & Santander, C. (2025). Artificial intelligence as a transforming factor in motility disorders–automatic detection of motility patterns in high-resolution anorectal manometry. <i>Scientific Reports, 15</i>(2061). https://doi.org/10.1038/s41598-024-83768-8</td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Título del artículo</td>
+      <td>Artificial intelligence as a transforming factor in motility disorders–automatic detection of motility patterns in high-resolution anorectal manometry</td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>Autores</td>
+      <td>Miguel Mascarenhas, Francisco Mendes, Joana Mota, Tiago Ribeiro, Pedro Cardoso, Miguel Martins, Maria João Almeida, João Rala Cordeiro, João Ferreira, Guilherme Macedo & Cecilio Santander</td>
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td>Año de publicación</td>
+      <td>2025</td>
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>Revista de publicación</td>
+      <td>Scientific Reports</td>
+    </tr>
+    <tr>
+      <th scope="row">9</th>
+      <td>Resumen</td>
+      <td>LLa manometría anorrectal de alta resolución (HR-ARM, por sus siglas en inglés) es el estándar de oro para la evaluación de los trastornos funcionales anorrectales, aunque se ve limitada por su accesibilidad y el análisis complejo de los datos. El Protocolo y la Clasificación de Londres fueron desarrollados para estandarizar la clasificación de los patrones de motilidad anorrectal. Este estudio de prueba de concepto tiene como objetivo desarrollar y validar un modelo de inteligencia artificial para la identificación y diferenciación de los trastornos del tono y la contractilidad anal en HR-ARM.
+Se utilizó un conjunto de datos de 701 exámenes HR-ARM de un centro terciario, clasificados de acuerdo con la Clasificación de Londres, para desarrollar y probar múltiples algoritmos de aprendizaje automático (machine learning, ML). Los exámenes se dividieron en un conjunto de entrenamiento y de prueba con una proporción 80/20. El conjunto de prueba se empleó para evaluar los modelos mediante precisión, sensibilidad, especificidad, valores predictivos positivos y negativos, y el área bajo la curva ROC. El clasificador LGBM obtuvo el mejor rendimiento, con una precisión del 87,0%en la identificación de trastornos de tono y contractilidad anal. Otros modelos de ML destacaron en la diferenciación de trastornos específicos de tono y contractilidad anal, con precisiones superiores al 90,0%.
+Este es el primer estudio a nivel mundial que demuestra la exactitud de un modelo de ML para la diferenciación de patrones de motilidad en HR-ARM, mostrando el valor de los modelos de inteligencia artificial en la optimización de la disponibilidad de HR-ARM, al mismo tiempo que reduce la variabilidad entre observadores y aumenta la precisión.
+</td>
+    </tr>
+    <tr>
+      <th scope="row">10</th>
+      <td>Palabras clave</td>
+      <td>STrastornos anorrectales, Manometría anorrectal, Inteligencia artificial, Gastroenterología, Aprendizaje automático</td>
+    </tr>
+    <tr>
+      <th scope="row">11</th>
+      <td>Imagen resultado de búsqueda</td>
+      <td><img src="articulo3_alejandro.png" alt="busqueda_articulo3_alejandro" id="articulo3_alejandro"></td>
+    </tr>
+  </tbody>
+       </table>
+        `;
+}

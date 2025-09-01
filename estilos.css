@@ -1,0 +1,47 @@
+h2, h3, h4 {
+    font-weight: bold;
+    margin-top: 20px; 
+}
+
+.tabla_articulo1_alejandro {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 15px;
+  border: 2px solid #198754;
+}
+
+.tabla_articulo1_alejandro th, 
+.tabla_articulo1_alejandro td {
+  border: 1px solid #dee2e6;
+  padding: 10px;
+}
+
+.tabla_articulo2_alejandro {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 15px;
+  border: 2px solid #871919;
+}
+
+.tabla_articulo2_alejandro th, 
+.tabla_articulo2_alejandro td {
+  border: 1px solid #dee2e6;
+  padding: 10px;
+}
+
+.tabla_articulo3_alejandro {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 15px;
+  border: 2px solid #194a87;
+}
+
+.tabla_articulo3_alejandro th, 
+.tabla_articulo3_alejandro td {
+  border: 1px solid #dee2e6;
+  padding: 10px;
+}
+
+#articulo1_alejandro, #articulo2_alejandro, #articulo1_alejandro {
+    border-radius: 12px;
+}
