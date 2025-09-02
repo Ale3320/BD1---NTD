@@ -17,14 +17,28 @@
       <button id="btnAlejandro" class="btn btn-primary m-2" onclick="window.location.href='alejandro.html'">Alejandro Parada</button>
       <button id="btnEsteban" class="btn btn-primary m-2" onclick="window.location.href='esteban.html'">Esteban Ávila</button>
       <button id="btnDaniel" class="btn btn-primary m-2" onclick="window.location.href='daniel.html'">Daniel Chávez</button>
-      
     </div>
 
-    <div id="mensaje" class="alert alert-primary mt-4 container text-center">
-      Te damos la bienvenida
+    <div id="mensaje" class="alert alert-primary mt-4">
+       <h3>Pasos de búsqueda de artículos</h3>
+        <h4>Paso 1:</h4>
+        <p>Selección de base de datos: Scopus</p>
+        <img src="busqueda1.png" width="50%" alt="busqueda_base_datos_alejandro">
+        <h4>Paso 2:</h4>
+        <p>Cadena de búsqueda: artificial AND intelligence</p>
+        <img src="busqueda2.png" width="50%" alt="cadena_busqueda_alejandro">
+        <h4>Paso 3:</h4>
+        <p>Resultado de búsqueda: 733.133 artículos</p>
+        <img src="busqueda3.png" width="50%" alt="resultado_busqueda_alejandro">
     </div>
 
-    <div class="text-center" id="botoneraArticulos"></div>
+    <div class="text-center" id="botoneraArticulos">
+        <p>Ahora selecciona un artículo</p>
+        <button class="btn btn-outline-primary m-1" onclick="art1Alejandro()">1</button>
+        <button class="btn btn-outline-primary m-1" onclick="art2Alejandro()">2</button>
+        <button class="btn btn-outline-primary m-1" onclick="art3Alejandro()">3</button>
+    </div>
+    
 
     <script src="script.js"></script>
   </body>

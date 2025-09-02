@@ -3,11 +3,24 @@ h2, h3, h4 {
     margin-top: 20px; 
 }
 
+
+#btnAlejandro{
+  background-color: #f39c12;
+}
+
+#btnEsteban{
+  background-color: #e74c3c;
+}
+
+#btnDaniel{
+  background-color: #198754;
+}
+
 .tabla_articulo1_alejandro {
   width: 100%;
   margin-top: 20px;
   font-size: 15px;
-  border: 2px solid #198754;
+  border: 10px solid #198754;
 }
 
 .tabla_articulo1_alejandro th, 
@@ -20,7 +33,7 @@ h2, h3, h4 {
   width: 100%;
   margin-top: 20px;
   font-size: 15px;
-  border: 2px solid #871919;
+  border: 10px solid #871919;
 }
 
 .tabla_articulo2_alejandro th, 
@@ -33,7 +46,7 @@ h2, h3, h4 {
   width: 100%;
   margin-top: 20px;
   font-size: 15px;
-  border: 2px solid #194a87;
+  border: 10px solid #194a87;
 }
 
 .tabla_articulo3_alejandro th, 
