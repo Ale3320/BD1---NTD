@@ -55,6 +55,6 @@ h2, h3, h4 {
   padding: 10px;
 }
 
-#articulo1_alejandro, #articulo2_alejandro, #articulo1_alejandro {
-    border-radius: 12px;
+.capturaArticulo{
+  border-radius: 12px;
 }
