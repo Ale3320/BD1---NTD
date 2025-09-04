@@ -1,60 +1,67 @@
+/* ----------------- ALEJANDRO -----------------*/
+
+/*Titulos*/
 h2, h3, h4 {
   font-weight: bold;
   margin-top: 20px; 
-}
+} 
 
-
+/*Botones Nav bar*/
 #btnAlejandro{
-background-color: #f39c12;
+  background-color: #f39c12;
 }
-
 #btnEsteban{
-background-color: #e74c3c;
+  background-color: #e74c3c;
 }
-
 #btnDaniel{
-background-color: #198754;
+  background-color: #198754;
 }
 
-.tabla_articulo1_alejandro {
-width: 100%;
-margin-top: 20px;
-font-size: 15px;
-border: 10px solid #198754;
-}
+/*Tablas articulos*/
+.tabla_articulo_alejandro {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 15px;
+  border: 10px solid #f39c12;
+} 
 
-.tabla_articulo1_alejandro th, 
-.tabla_articulo1_alejandro td {
-border: 1px solid #dee2e6;
-padding: 10px;
-}
+.tabla_articulo_esteban {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 15px;
+  border: 10px solid #e74c3c;
+} 
 
-.tabla_articulo2_alejandro {
-width: 100%;
-margin-top: 20px;
-font-size: 15px;
-border: 10px solid #871919;
-}
-
-.tabla_articulo2_alejandro th, 
-.tabla_articulo2_alejandro td {
-border: 1px solid #dee2e6;
-padding: 10px;
-}
-
-.tabla_articulo3_alejandro {
-width: 100%;
-margin-top: 20px;
-font-size: 15px;
-border: 10px solid #194a87;
-}
-
-.tabla_articulo3_alejandro th, 
-.tabla_articulo3_alejandro td {
-border: 1px solid #dee2e6;
-padding: 10px;
-}
+.tabla_articulo_daniel {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 15px;
+  border: 10px solid #198754;
+} 
 
 .capturaArticulo{
-border-radius: 12px;
+  border-radius: 20px;
+}
+
+
+/* ----------------- ESTEBAN -----------------*/
+
+
+/* ----------------- DANIEL -----------------*/
+
+/* ----------------- PRUEBA -----------------*/
+
+#btnArriba {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  background-color: #333;
+  padding: 12px;
+  border-radius: 100%;
+}
+
+#btnArriba:hover {
+  background-color: #555;
 }

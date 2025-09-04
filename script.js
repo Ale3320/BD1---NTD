@@ -158,7 +158,7 @@ function mostrarTablaArticulo(nombre,articulo) {
 
   mensaje.innerHTML = `
         <h3>Artículo ` + nArt +`</h3>
-        <table class="table tabla_articulo">
+        <table class="table tabla_articulo_` + nombre + `">
         <thead>
           <tr>
             <th scope="col">#</th>
@@ -225,4 +225,24 @@ function mostrarTablaArticulo(nombre,articulo) {
         </tbody>
             </table>
         `;
+}
+
+function irArriba(){
+  window.scrollTo(0,0);
+}
+
+function cambiarTema(){
+  if (document.body.style.background === "rgb(18, 18, 18)") {
+    // Cambiar a tema claro
+    document.body.style.background = "#ffffff";
+    document.body.style.color = "#000000";
+    btnTema.textContent = "🌙 Cambiar tema";
+    localStorage.setItem("tema", "claro");
+  } else {
+    // Cambiar a tema oscuro
+    document.body.style.background = "#121212";
+    document.body.style.color = "#f5f5f5";
+    btnTema.textContent = "☀ Cambiar tema";
+    localStorage.setItem("tema", "oscuro");
+  }//AJUSTAR
 }
