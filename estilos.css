@@ -1,60 +1,60 @@
 h2, h3, h4 {
-    font-weight: bold;
-    margin-top: 20px; 
+  font-weight: bold;
+  margin-top: 20px; 
 }
 
 
 #btnAlejandro{
-  background-color: #f39c12;
+background-color: #f39c12;
 }
 
 #btnEsteban{
-  background-color: #e74c3c;
+background-color: #e74c3c;
 }
 
 #btnDaniel{
-  background-color: #198754;
+background-color: #198754;
 }
 
 .tabla_articulo1_alejandro {
-  width: 100%;
-  margin-top: 20px;
-  font-size: 15px;
-  border: 10px solid #198754;
+width: 100%;
+margin-top: 20px;
+font-size: 15px;
+border: 10px solid #198754;
 }
 
 .tabla_articulo1_alejandro th, 
 .tabla_articulo1_alejandro td {
-  border: 1px solid #dee2e6;
-  padding: 10px;
+border: 1px solid #dee2e6;
+padding: 10px;
 }
 
 .tabla_articulo2_alejandro {
-  width: 100%;
-  margin-top: 20px;
-  font-size: 15px;
-  border: 10px solid #871919;
+width: 100%;
+margin-top: 20px;
+font-size: 15px;
+border: 10px solid #871919;
 }
 
 .tabla_articulo2_alejandro th, 
 .tabla_articulo2_alejandro td {
-  border: 1px solid #dee2e6;
-  padding: 10px;
+border: 1px solid #dee2e6;
+padding: 10px;
 }
 
 .tabla_articulo3_alejandro {
-  width: 100%;
-  margin-top: 20px;
-  font-size: 15px;
-  border: 10px solid #194a87;
+width: 100%;
+margin-top: 20px;
+font-size: 15px;
+border: 10px solid #194a87;
 }
 
 .tabla_articulo3_alejandro th, 
 .tabla_articulo3_alejandro td {
-  border: 1px solid #dee2e6;
-  padding: 10px;
+border: 1px solid #dee2e6;
+padding: 10px;
 }
 
 .capturaArticulo{
-  border-radius: 12px;
+border-radius: 12px;
 }
