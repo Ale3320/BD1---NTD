@@ -54,46 +54,46 @@ function mostrarTablaArticulo(nombre,articulo) {
           break;
 
     case 'esteban':
-          nombreDB ="";
-          busqueda = '';
-          cantBusqueda = "";
+          nombreDB ="Scopus";
+          busqueda = '“artificial intelligence” AND employment';
+          cantBusqueda = "3,839";
           switch (articulo) {
             case 1: //Esteban Art1
                   nArt = 1;
-                  refBib = "";
-                  titulo = "";
-                  autores = "";
+                  refBib = "Mhlongo, S. (2025). Exploring the Ethical and Social Impact of Artificial Intelligence: A BERTopic Analysis of Academic Literature. Communications in computer and information science (pp. 18-34). https://doi.org/10.1007/978-3-031-96262-2_3";
+                  titulo = "Exploring the Ethical and Social Impact of Artificial Intelligence: A BERTopic Analysis of Academic Literature";
+                  autores = "Mhlongo, Siyabonga";
                   anioPublicación = 2025;
-                  revista = "";
-                  resumen = "";
-                  keyWords = "";
-                  img = "....png";
+                  revista = "Communications in computer and information science";
+                  resumen = "Artificial intelligence (AI) is fundamentally transforming society, making its ethical and social implications an increasingly critical and evolving area of study. This study investigated the dominant themes in academic literature on AI’s societal effects, with a focus on ethical, economic, and broader social implications. While previous research has explored specific aspects of AI’s impact, the comprehensive examination of overarching themes and their implications remain an ongoing and necessary endeavour. Accordingly, this study employed BERTopic, an advanced topic modelling technique, to analyse a large corpus of academic literature retrieved from Scopus and Web of Science. The search strategy combined AI-related concepts with social impact themes. The analysis identified six dominant clusters: (1) AI in Transportation and Urban Mobility; (2) AI in Agriculture, Environment, and Energy; (3) AI in Renewable Energy, Sustainability, and Industrial Systems; (4) AI and Robotics in Society: Education, Care, and Employment; (5) AI in Media, Security, and Ethical Systems; (6) AI in Governance, Creativity, and Sustainable Development. These clusters represent the dominant themes concerning AI’s social impact. In-depth analysis drew attention to pressing societal challenges, particularly ethical considerations, as well as AI’s pronounced role in healthcare and education. It also revealed emerging trends such as generative AI and the growing emphasis on sustainability, highlighting how these shape the discourse. The findings emphasise the need for interdisciplinary research and policy interventions to mitigate AI’s societal risks and promote its responsible adoption. This study contributes to the growing body of literature by providing a structured overview of dominant themes, identifying research gaps, and offering actionable insights for stakeholders. Recommendations include the development of strong governance frameworks, the promotion of interdisciplinary collaboration, and the advancement of equity and inclusivity in the development and deployment of AI initiatives.";
+                  keyWords = "Artificial intelligence; BERTopic; Ethical considerations; Multidisciplinarity; Social impact; Topic modelling.";
+                  img = "images/articulo1_esteban.png";
                   altImg = "busqueda_articulo1_esteban"
                   break;
 
             case 2: //Esteban Art2
                   nArt = 2;
-                  refBib = "";
-                  titulo = "";
-                  autores = "";
+                  refBib = "Liu, L. (2025). What is the Future of Work in the Generative AI Era? A Marx-ist and Ricardian Analysis.  riple Communication Capitalism & Critique Open Access Journal For A Global Sustainable Information Society, 23(1), 131-148. https://doi.org/10.31269/triplec.v23i1.1536";
+                  titulo = "What is the Future of Work in the Generative AI Era? A Marx-ist and Ricardian Analysis";
+                  autores = "Liu, Larry";
                   anioPublicación = 2025;
-                  revista = "";
-                  resumen = "";
-                  keyWords = "";
-                  img = "....png";
+                  revista = "23riple Communication Capitalism & Critique Open Access Journal";
+                  resumen = "There is an increasing public discourse of automation for white-collar professional jobs due to improvements in artificial intelligence (AI) capacities, raising the question about the contours of the future of work. Marx and Ricardo’s framework of technological labour displacement helps us understand the future of work in the context of AI. Marx’s discussion in Capital and Ricardo’s discussion in Principles of Political Economy reveal the common thesis that technology-induced worker displacement and precariousness of employment relationships are built into the internal logic of the contemporary digital capitalist economy. There are three important differences in their theoretical framework: (1) Marx did not believe that high technological unemployment is possible within capitalism even with very advanced technologies such as AI, while Ricardo saw technological unemployment as a serious threat while he acknowledges countervailing employment-creating tendencies; (2) While Ricardo’s explanation for the falling rate of profit is limited to rising wages, Marx traces the profit decline to the rising organic composition of capital and automation itself; (3) For Marx, a desirable future of work is not found within a capitalist framework but in communism, while Ricardo sees no alternatives to capitalism.";
+                  keyWords = "artificial intelligence; automation; digital capitalism; future of work; Marx; Ricardo; technological unemployment.";
+                  img = "images/articulo2_esteban.png";
                   altImg = "busqueda_articulo2_esteban"
                   break;
 
             case 3: //Esteban Art3
                   nArt = 3;
-                  refBib = "";
-                  titulo = "";
-                  autores = "";
+                  refBib = "Barrera-Jimenez, F., Arroyo-Barrigüete, J. L., Garrido-Merchán, E. C., & Grinda-Luna, G. (2025). Invulnerability bias in perceptions of artificial intelligence’s future impact on employment. Scientific Reports, 15(1). https://doi.org/10.1038/s41598-025-14698-2";
+                  titulo = "Invulnerability bias in perceptions of artificial intelligence’s future impact on employment";
+                  autores = "Barrera-Jimenez, Felipe; Arroyo-Barrigüete, Jose Luis; Garrido-Merchán, Eduardo C.; Grinda-Luna, Gonzalo.";
                   anioPublicación = 2025;
-                  revista = "";
-                  resumen = "";
-                  keyWords = "";
-                  img = "....png";
+                  revista = "Scientific Reports";
+                  resumen = "The adoption of Artificial Intelligence (AI) is reshaping the labor market; however, individuals’ perceptions of its impact remain inconsistent. This study investigates the presence of the Invulnerability Bias (IB), where workers perceive that AI will have a greater impact on others’ jobs than on their own, and Optimism Bias by Type of Impact (OBTI), where individuals perceive AI’s future impact on their own job as more positive than on others’. The study analyzes survey data collected from 201 participants, recruited through social media using convenience sampling. The data were analyzed using a combination of statistical and machine learning methods, including the Wilcoxon test, ordinary least squares regression, clustering, random forests, and decision trees. Results confirm a significant IB, but not OBTI; only 31.8% perceived AI’s future impact on their own job as more positive than on others’. Analysis shows that greater knowledge of AI correlates with lower IB, suggesting that familiarity with AI reduces the tendency to externalize perceived risk. Furthermore, bias levels vary across professional sectors: healthcare, law, and public administration exhibit the highest IB, while technology-related professions show lower levels. These findings highlight the need for interventions to improve workers’ awareness of AI’s potential future impact on employment.";
+                  keyWords = "AI biases; Artificial intelligence; Future of work; Invulnerability bias; Optimism bias; Unrealistic optimism.";
+                  img = "images/articulo3_esteban.png";
                   altImg = "busqueda_articulo3_esteban"
                   break;
               
