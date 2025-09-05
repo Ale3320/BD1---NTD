@@ -158,7 +158,7 @@ function mostrarTablaArticulo(nombre,articulo) {
 
   mensaje.innerHTML = `
         <h3>Artículo ` + nArt +`</h3>
-        <table class="table tabla_articulo_` + nombre + `">
+        <table class="table tabla_articulo_` + nombre + `" id="tabla_articulo">
         <thead>
           <tr>
             <th scope="col">#</th>
@@ -232,17 +232,18 @@ function irArriba(){
 }
 
 function cambiarTema(){
-  if (document.body.style.background === "rgb(18, 18, 18)") {
+  const mensaje = document.getElementById("mensaje");
+  const tabla = document.getElementById("tabla_articulo");
+  const btnTema = document.getElementById("btnTema");
+  if (document.getElementById("mensaje").style.background === "rgb(18, 18, 18)") {
     // Cambiar a tema claro
-    document.body.style.background = "#ffffff";
-    document.body.style.color = "#000000";
-    btnTema.textContent = "🌙 Cambiar tema";
-    localStorage.setItem("tema", "claro");
+    mensaje.style.background = "#ffffff";
+    mensaje.style.color = "#000000";
+    btnTema.textContent = "🌙";
   } else {
     // Cambiar a tema oscuro
-    document.body.style.background = "#121212";
-    document.body.style.color = "#f5f5f5";
-    btnTema.textContent = "☀ Cambiar tema";
-    localStorage.setItem("tema", "oscuro");
+    mensaje.style.background = "#121212";
+    mensaje.style.color = "#f5f5f5";
+    btnTema.textContent = "☀";
   }//AJUSTAR
 }
