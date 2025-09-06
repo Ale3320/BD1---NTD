@@ -17,20 +17,41 @@
       <button id="btnAlejandro" class="btn btn-primary m-2" onclick="window.location.href='alejandro.html'">Alejandro Parada</button>
       <button id="btnEsteban" class="btn btn-primary m-2" onclick="window.location.href='esteban.html'">Esteban Ávila</button>
       <button id="btnDaniel" class="btn btn-primary m-2" onclick="window.location.href='daniel.html'">Daniel Chávez</button>
+      <button id="btnTema" title="Cabiar Tema" onclick="cambiarTema()">🌙</button>
     </div>
 
-    <center><div id="mensaje" class="alert alert-primary mt-4">
-       <h3>Pasos de búsqueda de artículos</h3>
+    <button id="btnArriba" title="Ir arriba" onclick="irArriba()">⬆</button>
+
+    <center>
+      <div id="mensaje" class="alert alert-primary mt-4">
+        <h3>Pasos de búsqueda de artículos</h3>
+    
+        <!-- Paso 1 -->
         <h4>Paso 1:</h4>
-        <p>Selección de base de datos: Scopus</p>
-        <img src="images/busqueda1Esteban.png" width="50%" alt="busqueda_base_datos_esteban">
+        <button onclick="mostrarOcultar('paso1Esteban')">Ocultar/mostrar</button>
+        <div id="paso1Esteban" style="display:block;">
+          <p>Selección de base de datos: Scopus</p>
+          <img src="images/busqueda1Esteban.png" width="50%" alt="busqueda_base_datos_esteban">
+        </div>
+    
+        <!-- Paso 2 -->
         <h4>Paso 2:</h4>
-        <p>Cadena de búsqueda: "artificial intelligence AND employment"</p>
-        <img src="images/busqueda2Esteban.png" width="50%" alt="cadena_busqueda_esteban">
+        <button onclick="mostrarOcultar('paso2Esteban')">Ocultar/mostrar</button>
+        <div id="paso2Esteban" style="display:block;">
+          <p>Cadena de búsqueda: "artificial intelligence AND employment"</p>
+          <img src="images/busqueda2Esteban.png" width="50%" alt="cadena_busqueda_esteban">
+        </div>
+    
+        <!-- Paso 3 -->
         <h4>Paso 3:</h4>
-        <p>Resultado de búsqueda: 3,839 artículos</p>
-        <img src="images/busqueda3Esteban.png" width="50%" alt="resultado_busqueda_esteban">
-    </div></center>
+        <button onclick="mostrarOcultar('paso3Esteban')">Ocultar/mostrar</button>
+        <div id="paso3Esteban" style="display:block;">
+          <p>Resultado de búsqueda: 3,839 artículos</p>
+          <img src="images/busqueda3Esteban.png" width="50%" alt="resultado_busqueda_esteban">
+        </div>
+      </div>
+    </center>
+    
 
     <div class="text-center" id="botoneraArticulos">
         <p>Ahora selecciona un artículo</p>

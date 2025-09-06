@@ -17,24 +17,42 @@
       <button id="btnAlejandro" class="btn btn-primary m-2" onclick="window.location.href='alejandro.html'">Alejandro Parada</button>
       <button id="btnEsteban" class="btn btn-primary m-2" onclick="window.location.href='esteban.html'">Esteban Ávila</button>
       <button id="btnDaniel" class="btn btn-primary m-2" onclick="window.location.href='daniel.html'">Daniel Chávez</button>
-      <button id="btnTema" title="Cabiar Tema" onclick="cambiarTema()">🌙</button> <!-- PRUEBA -->
+      <button id="btnTema" title="Cabiar Tema" onclick="cambiarTema()">🌙</button>
     </div>
 
-    <button id="btnArriba" title="Ir arriba" onclick="irArriba()">⬆</button> <!-- PRUEBA -->
+    <button id="btnArriba" title="Ir arriba" onclick="irArriba()">⬆</button>
 
 
-    <center><div id="mensaje" class="alert alert-primary mt-4">
-       <h3>Pasos de búsqueda de artículos</h3>
+    
+    <center>
+      <div id="mensaje" class="alert alert-primary mt-4">
+        <h3>Pasos de búsqueda de artículos</h3>
+
+        <!-- Paso 1 -->
         <h4>Paso 1:</h4>
-        <p>Selección de base de datos: 	EBSCO Computer and Applied Science Complete(EBSCOhost)</p>
-        <img src="images/busqueda1Daniel.png" width="50%" alt="busqueda_base_datos_daniel">
+        <button onclick="mostrarOcultar('paso1')">Ocultar/mostrar</button>
+        <div id="paso1" style="display:block;">
+          <p>Selección de base de datos: EBSCO Computer and Applied Science Complete (EBSCOhost)</p>
+          <img src="images/busqueda1Daniel.png" width="50%" alt="busqueda_base_datos_daniel">
+        </div>
+
+        <!-- Paso 2 -->
         <h4>Paso 2:</h4>
-        <p>Cadena de búsqueda: "machine learning" OR "artificial intelligence"</p>
-        <img src="images/busqueda2Daniel.png" width="50%" alt="cadena_busqueda_daniel">
+        <button onclick="mostrarOcultar('paso2')">Ocultar/mostrar</button>
+        <div id="paso2" style="display:block;">
+          <p>Cadena de búsqueda: "machine learning" OR "artificial intelligence"</p>
+          <img src="images/busqueda2Daniel.png" width="50%" alt="cadena_busqueda_daniel">
+        </div>
+
+        <!-- Paso 3 -->
         <h4>Paso 3:</h4>
-        <p>Resultado de búsqueda: 281,044 artículos</p>
-        <img src="images/busqueda3Daniel.png" width="50%" alt="resultado_busqueda_daniel">
-    </div></center>
+        <button onclick="mostrarOcultar('paso3')">Ocultar/mostrar</button>
+        <div id="paso3" style="display:block;">
+          <p>Resultado de búsqueda: 281,044 artículos</p>
+          <img src="images/busqueda3Daniel.png" width="50%" alt="resultado_busqueda_daniel">
+        </div>
+      </div>
+    </center>
 
     <div class="text-center" id="botoneraArticulos">
         <p>Ahora selecciona un artículo</p>

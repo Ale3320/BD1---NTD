@@ -236,14 +236,21 @@ function cambiarTema(){
   const tabla = document.getElementById("tabla_articulo");
   const btnTema = document.getElementById("btnTema");
   if (document.getElementById("mensaje").style.background === "rgb(18, 18, 18)") {
-    // Cambiar a tema claro
-    mensaje.style.background = "#ffffff";
-    mensaje.style.color = "#000000";
+    mensaje.style.background = "#375a7f";
     btnTema.textContent = "🌙";
+    
   } else {
-    // Cambiar a tema oscuro
     mensaje.style.background = "#121212";
     mensaje.style.color = "#f5f5f5";
     btnTema.textContent = "☀";
-  }//AJUSTAR
+  }
+}
+
+function mostrarOcultar(id) {
+  let paso = document.getElementById(id);
+  if (paso.style.display === "none") {
+    paso.style.display = "block";
+  } else {
+    paso.style.display = "none";
+  }
 }
